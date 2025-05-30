@@ -34,12 +34,12 @@ const About = () => {
         </p>
 
         <AnimatedTitle
-          title="Disc<b>o</b>ver the World's <br /> Most Intelligent <b>S</b>hared Experience"
+          title="Disc<b>o</b>ver the World's <br /> Most Intelligent Experience"
           containerClass="mt-5 !text-black text-center"
         />
 
         <div className="about-subtext">
-          <p>Your journey, now guided by Nexora — your personal AI questmaster.</p>
+          <p>Your journey, now guided by Nexora — your personal AI</p>
           <p className="text-gray-500">
             Nexora merges intelligence from every source—code, 
             conversation, or command—into one evolving AI continuum.
