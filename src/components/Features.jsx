@@ -103,12 +103,11 @@ const Features = () => (
     <div className="container mx-auto px-3 md:px-10">
       <div className="px-5 py-32">
         <p className="font-circular-web text-lg text-blue-50">
-          Into the Metagame Layer
+          Plug Into the Neural Layer
         </p>
         <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50">
-          Immerse yourself in a rich and ever-expanding universe where a vibrant
-          array of products converge into an interconnected overlay experience
-          on your world.
+          Enter a living network of AI-powered tools, where technology overlays 
+          your reality and adapts in real time.
         </p>
       </div>
 
@@ -120,7 +119,7 @@ const Features = () => (
               radia<b>n</b>t
             </>
           }
-          description="A cross-platform metagame app, turning your activities across Web2 and Web3 games into a rewarding adventure."
+          description="An intelligent layer built with Node.js and React—integrating Web2 and Web3 activity into a smart, gamified framework."
           isComingSoon
         />
       </BentoTilt>
@@ -131,10 +130,10 @@ const Features = () => (
             src="videos/feature-2.mp4"
             title={
               <>
-                zig<b>m</b>a
+                Cyber<b>U</b>I
               </>
             }
-            description="An anime and gaming-inspired NFT collection - the IP primed for expansion."
+            description="A Cyber themed AI bot with interactive UI"
             isComingSoon
           />
         </BentoTilt>
@@ -144,10 +143,10 @@ const Features = () => (
             src="videos/feature-3.mp4"
             title={
               <>
-                n<b>e</b>xus
+                Image <b>Gen</b>eration
               </>
             }
-            description="A gamified social hub, adding a new dimension of play to social interaction for Web3 communities."
+            description="Image Generation capabilities, Image to Image, Text to Image and Prompt generation."
             isComingSoon
           />
         </BentoTilt>
@@ -157,10 +156,10 @@ const Features = () => (
             src="videos/feature-4.mp4"
             title={
               <>
-                az<b>u</b>l
+                Perso<b>n</b>al De<b>s</b>ign
               </>
             }
-            description="A cross-world AI Agent - elevating your gameplay to be more fun and productive."
+            description="Designing your AI as per your preference"
             isComingSoon
           />
         </BentoTilt>
