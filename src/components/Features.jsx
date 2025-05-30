@@ -133,7 +133,7 @@ const Features = () => (
                 Cyber<b>U</b>I
               </>
             }
-            description="A Cyber themed AI bot with interactive UI"
+            description="A Game themed AI bot with interactive UI"
             isComingSoon
           />
         </BentoTilt>
