@@ -6,14 +6,10 @@ import { TiLocationArrow } from "react-icons/ti";
 
 import Button from "./Button";
 
-const navItems = ["Nexora", "Creator", "About", "Contact"];
-
 const NavBar = () => {
-  // State for toggling audio and visual indicator
   const [isAudioPlaying, setIsAudioPlaying] = useState(false);
   const [isIndicatorActive, setIsIndicatorActive] = useState(false);
 
-  // Refs for audio and navigation container
   const audioElementRef = useRef(null);
   const navContainerRef = useRef(null);
 
@@ -21,13 +17,11 @@ const NavBar = () => {
   const [isNavVisible, setIsNavVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
-  // Toggle audio and visual indicator
   const toggleAudioIndicator = () => {
     setIsAudioPlaying((prev) => !prev);
     setIsIndicatorActive((prev) => !prev);
   };
 
-  // Manage audio playback
   useEffect(() => {
     if (isAudioPlaying) {
       audioElementRef.current.play();
@@ -38,15 +32,12 @@ const NavBar = () => {
 
   useEffect(() => {
     if (currentScrollY === 0) {
-      // Topmost position: show navbar without floating-nav
       setIsNavVisible(true);
       navContainerRef.current.classList.remove("floating-nav");
     } else if (currentScrollY > lastScrollY) {
-      // Scrolling down: hide navbar and apply floating-nav
       setIsNavVisible(false);
       navContainerRef.current.classList.add("floating-nav");
     } else if (currentScrollY < lastScrollY) {
-      // Scrolling up: show navbar with floating-nav
       setIsNavVisible(true);
       navContainerRef.current.classList.add("floating-nav");
     }
@@ -61,14 +52,6 @@ const NavBar = () => {
       duration: 0.2,
     });
   }, [isNavVisible]);
-
-  <div className="flex h-full items-center">
-   <div className="hidden md:block">
-    <a href="https://project-smoky-tau-71.vercel.app/" className="nav-hover-btn">Nexora</a>
-    <a href="https://github.com/The-Vaibhav" className="nav-hover-btn">Creator</a>
-   </div>
-  </div>
-
 
   return (
     <div
@@ -92,15 +75,18 @@ const NavBar = () => {
           {/* Navigation Links and Audio Button */}
           <div className="flex h-full items-center">
             <div className="hidden md:block">
-              {navItems.map((item, index) => (
-                <a
-                  key={index}
-                  href={`#${item.toLowerCase()}`}
-                  className="nav-hover-btn"
-                >
-                  {item}
-                </a>
-              ))}
+              <a
+                href="https://project-smoky-tau-71.vercel.app/"
+                className="nav-hover-btn"
+              >
+                Nexora
+              </a>
+              <a
+                href="https://github.com/The-Vaibhav"
+                className="nav-hover-btn"
+              >
+                Creator
+              </a>
             </div>
 
             <button
