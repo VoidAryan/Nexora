@@ -62,6 +62,14 @@ const NavBar = () => {
     });
   }, [isNavVisible]);
 
+  <div className="flex h-full items-center">
+   <div className="hidden md:block">
+    <a href="https://project-smoky-tau-71.vercel.app/" className="nav-hover-btn">Nexora</a>
+    <a href="https://github.com/The-Vaibhav" className="nav-hover-btn">Creator</a>
+   </div>
+  </div>
+
+
   return (
     <div
       ref={navContainerRef}
