@@ -64,18 +64,14 @@ const NavBar = () => {
           <div className="flex items-center gap-7">
             <img src="/img/logoo.png" alt="logo" className="w-10" />
 
-            <a
-  href="https://project-smoky-tau-71.vercel.app/"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="bg-blue-50 md:flex hidden items-center justify-center gap-1"
->
-  <Button
-    id="product-button"
-    title="Try Nexora"
-    rightIcon={<TiLocationArrow />}
-  />
-</a>
+            <Button
+  id="product-button"
+  title="Try Nexora"
+  rightIcon={<TiLocationArrow />}
+  containerClass="bg-blue-50 md:flex hidden items-center justify-center gap-1"
+  onClick={() => window.open("https://project-smoky-tau-71.vercel.app/", "_blank")}
+/>
+
           </div>
 
           {/* Navigation Links and Audio Button */}
