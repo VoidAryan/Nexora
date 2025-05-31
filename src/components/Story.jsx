@@ -110,12 +110,6 @@ const FloatingImage = () => {
               boundless AI pillar.
               Unlock its secrets and shape your future through limitless possibilities.
             </p>
-
-            <Button
-              id="realm-btn"
-              title="Chat with Us"
-              containerClass="mt-5"
-            />
           </div>
         </div>
       </div>
