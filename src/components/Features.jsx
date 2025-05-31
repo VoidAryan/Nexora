@@ -116,10 +116,10 @@ const Features = () => (
           src="videos/feature-1.mp4"
           title={
             <>
-              radia<b>n</b>t
+              Perso<b>n</b>alization
             </>
           }
-          description="An intelligent layer built with Node.js and React—integrating Web2 and Web3 activity into a smart, gamified framework."
+          description="Selection from various game themes to apply in your personal User Interface"
           isComingSoon
         />
       </BentoTilt>
@@ -130,7 +130,7 @@ const Features = () => (
             src="videos/feature-2.mp4"
             title={
               <>
-                Cyber<b>U</b>I
+                Game Based <b>U</b>I
               </>
             }
             description="A Game themed AI bot with interactive UI"
