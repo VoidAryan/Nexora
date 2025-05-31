@@ -67,6 +67,14 @@ const NavBar = () => {
             <div className="relative bg-blue-50 md:flex hidden items-center justify-center gap-1">
           </div>
 
+      <ButtonAdd commentMore actions
+          id="product-button"
+          title="Try Nexora"
+          rightIcon={<TiLocationArrow />}
+          containerClass="bg-blue-50 md:flex hidden items-center justify-center gap-1"
+          onClick={() => window.open("https://project-smoky-tau-71.vercel.app/", "_blank")}
+          />
+
           {/* Navigation Links and Audio Button */}
           <div className="flex h-full items-center">
             <div className="hidden md:block space-x-6">
