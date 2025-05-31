@@ -64,17 +64,18 @@ const NavBar = () => {
           <div className="flex items-center gap-7">
             <img src="/img/logoo.png" alt="logo" className="w-10" />
 
-            <Button
-              id="product-button"
-              title="Try Nexora"
-              rightIcon={<TiLocationArrow />}
-              containerClass="bg-blue-50 md:flex hidden items-center justify-center gap-1"
-              // Added link by wrapping in <a> inside Button or pass link prop if Button supports it
-              // Assuming Button accepts a 'onClick' or 'href' prop, else wrap below:
-              onClick={() =>
-                window.open("https://project-smoky-tau-71.vercel.app/", "_blank")
-              }
-            />
+            <a
+  href="https://project-smoky-tau-71.vercel.app/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-blue-50 md:flex hidden items-center justify-center gap-1"
+>
+  <Button
+    id="product-button"
+    title="Try Nexora"
+    rightIcon={<TiLocationArrow />}
+  />
+</a>
           </div>
 
           {/* Navigation Links and Audio Button */}
