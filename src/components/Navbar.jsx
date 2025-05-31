@@ -69,12 +69,17 @@ const NavBar = () => {
               title="Try Nexora"
               rightIcon={<TiLocationArrow />}
               containerClass="bg-blue-50 md:flex hidden items-center justify-center gap-1"
+              // Added link by wrapping in <a> inside Button or pass link prop if Button supports it
+              // Assuming Button accepts a 'onClick' or 'href' prop, else wrap below:
+              onClick={() =>
+                window.open("https://project-smoky-tau-71.vercel.app/", "_blank")
+              }
             />
           </div>
 
           {/* Navigation Links and Audio Button */}
           <div className="flex h-full items-center">
-            <div className="hidden md:block">
+            <div className="hidden md:block space-x-6">
               <a
                 href="https://project-smoky-tau-71.vercel.app/"
                 className="nav-hover-btn"
@@ -86,6 +91,9 @@ const NavBar = () => {
                 className="nav-hover-btn"
               >
                 Creator
+              </a>
+              <a href="#contact" className="nav-hover-btn">
+                Contact
               </a>
             </div>
 
