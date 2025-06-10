@@ -46,7 +46,7 @@ const Contact = () => {
          <Button
            title="contact us"
            containerClass="mt-10 cursor-pointer"
-           onClick={() => window.open("https://www.linkedin.com/in/vaibhavgarg-o1", "_blank")}
+           onClick={() => window.open("https://github.com/VoidAryan", "_blank")}
            />
 
         </div>
