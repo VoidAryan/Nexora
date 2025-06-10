@@ -84,7 +84,7 @@ const NavBar = () => {
                 Nexora
               </a>
               <a
-                href="https://github.com/The-Vaibhav"
+                href="https://github.com/VoidAryan"
                 className="nav-hover-btn"
               >
                 Creator
